@@ -1,0 +1,17 @@
+generated: '2026-07-20'
+method: searched
+status: documented
+source: https://proscia.com/build-on-concentriq/
+server:
+  name: concentriq
+  transport: unknown
+  url: null
+notes: >-
+  Proscia's Concentriq developer platform ("Build On Concentriq") explicitly lists
+  Model Context Protocol (MCP) as a supported data-access method alongside its REST API,
+  Custom APIs, and SDK. MCP is positioned as part of the Concentriq "data backbone" that
+  unifies images and clinical data so that models and agents plug in without a new
+  integration each time. No concrete hosted/remote MCP server endpoint, transport, or
+  public tool manifest is published, and there is no public OpenAPI to derive a candidate
+  tool list from; this artifact records the documented capability only.
+tools: []

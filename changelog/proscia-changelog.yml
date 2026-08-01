@@ -1,0 +1,40 @@
+generated: '2026-07-20'
+method: searched
+source: https://proscia.com/whats-new-in-concentriq-ap/
+scheme: product-release
+current_version: "Concentriq Fifth Generation"
+docs: https://proscia.com/whats-new-in-concentriq-ap/
+notes: >-
+  Proscia publishes marketing "What's New" release summaries per product line; detailed
+  release notes are gated to current Concentriq customers (support@proscia.com). Recent
+  window captured from public "What's New" and press pages.
+entries:
+- version: Concentriq Fifth Generation
+  date: '2026-06'
+  breaking: false
+  highlights:
+  - Most significant advancement in five years; domain-specific frontier vision, language, and multimodal models at the core.
+  - Enterprise-scale security, governance, and reliability.
+- version: Concentriq AP v4.11
+  date: '2026-02'
+  breaking: false
+  highlights:
+  - Support for .bif image formats from Roche VENTANA DP 200 and DP 600 scanners.
+  - Granular prostate findings via Ibex Galen Prostate for labs using Ibex AI.
+- version: Concentriq LS v4.4 / v4.5
+  date: '2025-10'
+  breaking: false
+  highlights:
+  - AI-ready workflows, intelligent annotations, productivity and image-analysis enhancements.
+- version: Concentriq AP v4.9 / v4.10
+  date: '2025-09'
+  breaking: false
+  highlights:
+  - Fluorescence image formats (Zeiss .czi, 3DHISTECH .mrxs, Akoya .qptiff) with channel/pseudocolor/gamma controls.
+  - Direct IdP authentication (Okta, Microsoft Authenticator) bypassing the Concentriq login page.
+- version: Concentriq AP (April 2025)
+  date: '2025-04'
+  breaking: false
+  highlights:
+  - DICOM support for Leica GT-450 and 3DHISTECH scanners; SVS from Grundium scanners.
+  - Multiple secondary reviewers in collaborative review; saved filtered consult worklists.

@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/Proscia/proscia-ai-tools + https://proscia.com/build-on-concentriq/
+authentication:
+  style: >-
+    One of: Concentriq API key (concentriq-api-key header), JWT bearer token, or basic
+    (email+password exchanged for JWT). Enterprise SAML SSO federation. See
+    authentication/proscia-authentication.yml.
+api_base:
+  pattern: "{concentriq-tenant-endpoint}/api"
+  note: The REST API path is the tenant Concentriq deployment URL with an /api suffix.
+error_handling:
+  transport: HTTP status codes; the Python client raises on HTTPError and retries transient failures.
+  envelope: not publicly documented as a structured problem+json catalog.
+versioning:
+  scheme: product-release (Concentriq AP / Concentriq LS semantic product versions, e.g. v4.11)
+  changelog: https://proscia.com/whats-new-in-concentriq-ap/
+idempotency:
+  documented: false
+  note: No public idempotency-key contract documented; not asserted.
+pagination:
+  documented: unknown
+  note: Not publicly documented; the API reference is customer-gated.
+rate_limiting:
+  documented: unknown
+cross_links:
+  authentication: authentication/proscia-authentication.yml
+  conformance: conformance/proscia-conformance.yml
+  changelog: changelog/proscia-changelog.yml

@@ -1,0 +1,41 @@
+# Proscia
+
+> Proscia is a digital pathology software company whose Concentriq platform powers AI-driven precision medicine and diagnostic pathology for clinical labs, pharma/biotech R&D, CROs, and academic research. Concentriq is an open, API-first platform (REST API, Custom APIs, SDK, Model Context Protocol data backbone, Concentriq Embeddings foundation-model API, Compute, and Analysis API). Proscia is SOC 2 Type II, ISO 27001, and ISO 13485 certified, HIPAA/GDPR aligned, with FDA 510(k)-cleared and CE-IVDR-marked diagnostic products.
+
+## APIs
+
+- [Concentriq Platform API](https://proscia.com/build-on-concentriq/): REST API over whole-slide images, annotations, regions of interest, users, and clinical/case data. Auth via Concentriq API key (concentriq-api-key header), JWT bearer, or basic (email+password → JWT); enterprise SAML SSO.
+- [Concentriq Embeddings API](https://github.com/Proscia/proscia-ai-tools): Foundation-model API extracting visual embeddings from slides using DinoV2, PLIP, ConvNext, CTransPath, H-optimus-0, and Virchow.
+
+## Developer
+
+- [Build On Concentriq (developer platform)](https://proscia.com/build-on-concentriq/)
+- [Proscia AI Tools (Python client, GitHub)](https://github.com/Proscia/proscia-ai-tools)
+- [GitHub organization](https://github.com/Proscia)
+
+## Docs & Support
+
+- [What's New in Concentriq AP (release notes)](https://proscia.com/whats-new-in-concentriq-ap/)
+- [Concentriq LS support center](https://supportteam.concentriq.proscia.com/)
+- [Concentriq LS cloud login](https://cloud.proscia.com/)
+
+## Repo artifacts
+
+- Authentication profile: authentication/proscia-authentication.yml
+- Packages / SDKs: packages/proscia-packages.yml
+- MCP capability: mcp/proscia-mcp.yml
+- Conformance / compliance: conformance/proscia-conformance.yml
+- API conventions: conventions/proscia-conventions.yml
+- Changelog: changelog/proscia-changelog.yml
+- Domain security probe: security/proscia-domain-security.yml
+
+## Compliance
+
+- [Proscia achieves SOC 2 Type II](https://proscia.com/press-releases/proscia-achieves-soc-2-type-ii-certification-strengthening-enterprise-trust/)
+- [Proscia achieves ISO 27001](https://proscia.com/press-releases/proscia-achieves-iso-27001-security-certification/)
+
+## Company
+
+- [Proscia homepage](https://proscia.com/)
+- [Blog](https://proscia.com/blog/)
+- [Request a demo](https://proscia.com/demo)

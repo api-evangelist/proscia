@@ -1,0 +1,18 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/Proscia/proscia-ai-tools
+packages:
+- language: python
+  registry: github
+  name: proscia-ai-tools
+  url: https://github.com/Proscia/proscia-ai-tools
+  install: pip install git+https://github.com/Proscia/proscia-ai-tools.git
+  official: true
+  license: MIT
+  description: >-
+    First-party Python client and toolkit (Proscia AI Team, ai_team@proscia.com) for the
+    Concentriq Embeddings foundation-model API and the Concentriq LS platform. Includes a
+    ConcentriqEmbeddings client, a ConcentriqLS client, annotation helpers, and Jupyter
+    notebook tutorials for embeddings, regions of interest, clustering, segmentation, and
+    zero-shot classification. Not published to PyPI as of this pass (installed from source).
+  notes: Verified not present on PyPI (pypi.org/project/proscia-ai-tools returns 404); distributed via GitHub source.

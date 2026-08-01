@@ -1,0 +1,41 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/Proscia/proscia-ai-tools (proscia_ai_tools client) + https://proscia.com/build-on-concentriq/
+docs: https://proscia.com/build-on-concentriq/
+summary:
+  types: [apiKey, http, oauth2]
+  api_key_in: [header]
+  api_key_name: concentriq-api-key
+  oauth2_flows: [saml-sso]
+  notes: >-
+    The Concentriq client accepts exactly one of three auth methods: a Concentriq API key
+    (concentriq-api-key header, generated and managed in-app by admins), a pre-obtained JWT
+    bearer token, or email+password basic auth that is exchanged for a JWT. Enterprise tenants
+    federate login via SAML SSO (Okta, Microsoft/Entra) and can bypass the Concentriq login
+    page to authenticate directly through their identity provider.
+schemes:
+- name: ConcentriqApiKey
+  type: apiKey
+  in: header
+  parameter_name: concentriq-api-key
+  description: Concentriq API key, generated and managed in-app by tenant administrators.
+  sources: [github.com/Proscia/proscia-ai-tools/proscia_ai_tools/concentriqlsclient.py]
+- name: JwtBearer
+  type: http
+  scheme: bearer
+  bearer_format: JWT
+  description: Pre-obtained JWT bearer token presented on the Authorization header.
+  sources: [github.com/Proscia/proscia-ai-tools/proscia_ai_tools/client.py]
+- name: BasicAuth
+  type: http
+  scheme: basic
+  description: Email + password basic credentials, exchanged server-side for a JWT.
+  sources: [github.com/Proscia/proscia-ai-tools/proscia_ai_tools/client.py]
+- name: SamlSSO
+  type: oauth2
+  flow: saml-sso
+  description: >-
+    Enterprise single sign-on via SAML against the customer identity provider
+    (Okta, Microsoft Authenticator/Entra). Users can authenticate directly through
+    their IdP, bypassing the Concentriq login page.
+  sources: [https://proscia.com/ai-ready-workflows-intelligent-annotations-more-key-updates-in-the-latest-concentriq-ls-releases/]
