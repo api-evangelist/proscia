@@ -1,6 +1,7 @@
 generated: '2026-07-20'
 method: searched
-status: documented
+status: published
+status_raw: documented
 source: https://proscia.com/build-on-concentriq/
 server:
   name: concentriq
