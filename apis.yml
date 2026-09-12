@@ -97,6 +97,8 @@ x-enrichment:
   artifacts_added: 8
   pass: local-v1
 common:
+- type: Website
+  url: https://www.proscia.com/
 - type: DeveloperPortal
   url: https://proscia.com/build-on-concentriq/
 - type: Documentation
